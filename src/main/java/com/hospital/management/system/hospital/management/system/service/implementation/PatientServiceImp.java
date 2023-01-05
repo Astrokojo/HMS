@@ -30,14 +30,14 @@ public class PatientServiceImp implements PatientServiceInterface {
     public Patient updatePatient(Long id, Patient patient){
         return patientDao.findById(id)
                 .map(newPatient->{
-                    patient.setFirst_name(patient.getFirst_name());
-                    patient.setLast_name(patient.getLast_name());
-                    patient.setDob(patient.getDob());
-                    patient.setGender(patient.getGender());
-                    patient.setEmail(patient.getEmail());
-                    patient.setContact(patient.getContact());
-                    patient.setAddress(patient.getAddress());
-                    patient.setLocation(patient.getLocation());
+                   newPatient.setFirst_name(patient.getFirst_name());
+                   newPatient.setLast_name(patient.getLast_name());
+                   newPatient.setDob(patient.getDob());
+                   newPatient.setGender(patient.getGender());
+                   newPatient.setEmail(patient.getEmail());
+                   newPatient.setContact(patient.getContact());
+                   newPatient.setAddress(patient.getAddress());
+                   newPatient.setLocation(patient.getLocation());
                     return patientDao.save(newPatient);
                 })
                 .orElseGet(()->{return patientDao.save(patient);});
