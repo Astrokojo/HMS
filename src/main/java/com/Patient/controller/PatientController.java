@@ -1,8 +1,8 @@
-package com.controller;
+package com.Patient.controller;
 
-import com.dao.PatientDao;
-import com.model.Patient;
-import com.service.implementation.PatientServiceImp;
+import com.Patient.model.Patient;
+import com.Patient.dao.PatientDao;
+import com.Patient.service.implementation.PatientServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

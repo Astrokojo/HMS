@@ -1,6 +1,6 @@
-package com.dao;
+package com.Patient.dao;
 
-import com.model.Patient;
+import com.Patient.model.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

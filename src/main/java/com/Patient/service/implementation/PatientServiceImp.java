@@ -1,8 +1,8 @@
-package com.service.implementation;
+package com.Patient.service.implementation;
 
-import com.dao.PatientDao;
-import com.model.Patient;
-import com.service.PatientServiceInterface;
+import com.Patient.model.Patient;
+import com.Patient.dao.PatientDao;
+import com.Patient.service.PatientServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

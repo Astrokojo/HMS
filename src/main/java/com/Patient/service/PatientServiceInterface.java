@@ -1,6 +1,6 @@
-package com.service;
+package com.Patient.service;
 
-import com.model.Patient;
+import com.Patient.model.Patient;
 
 import java.util.List;
 
